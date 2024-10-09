@@ -9,8 +9,6 @@ const Calender = () => {
   const [selectedMonth, setSelectedMonth] = useState(new Date())
   const {events} = useEvent()
 
-
-1
      const calenderDays = useMemo(() => {
         const firstWeekStart = startOfWeek(startOfMonth(selectedMonth))
         const lastWeekEnd = endOfWeek(endOfMonth(selectedMonth))
